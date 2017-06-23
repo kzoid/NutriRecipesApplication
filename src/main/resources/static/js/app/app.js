@@ -1,19 +1,19 @@
-var app = angular.module('crudApp',['ui.router','ngStorage']);
+var app = angular.module('crudApp', ['ui.router', 'ngStorage']);
 
 app.constant('urls', {
-    BASE: 'http://localhost:8080/SpringBootCRUDApp',
-    USER_SERVICE_API : 'http://localhost:8080/SpringBootCRUDApp/api/user/'
+    BASE: 'http://localhost:8080/nutrirecipes',
+    USER_SERVICE_API: 'http://localhost:8080/nutrirecipes/api/user/'
 });
 
 app.config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider) {
+    function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider
             .state('home', {
                 url: '/',
                 templateUrl: 'partials/list',
-                controller:'UserController',
-                controllerAs:'ctrl',
+                controller: 'UserController',
+                controllerAs: 'ctrl',
                 resolve: {
                     users: function ($q, UserService) {
                         console.log('Load all users');

@@ -6,20 +6,20 @@ import com.kzoid.nutrirecipes.model.User;
 import java.util.List;
 
 public interface UserService {
-	
-	User findById(Long id);
 
-	User findByName(String name);
+    User findById(Long id);
 
-	void saveUser(User user);
+    User findByName(String name);
 
-	void updateUser(User user);
+    void saveUser(User user);
 
-	void deleteUserById(Long id);
+    void updateUser(User user);
 
-	void deleteAllUsers();
+    void deleteUserById(Long id);
 
-	List<User> findAllUsers();
+    void deleteAllUsers();
 
-	boolean isUserExist(User user);
+    List<User> findAllUsers();
+
+    boolean isUserExist(User user);
 }

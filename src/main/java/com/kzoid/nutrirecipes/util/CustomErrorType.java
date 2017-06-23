@@ -1,11 +1,10 @@
 package com.kzoid.nutrirecipes.util;
 
-
 public class CustomErrorType {
 
     private String errorMessage;
 
-    public CustomErrorType(String errorMessage){
+    public CustomErrorType(String errorMessage) {
         this.errorMessage = errorMessage;
     }
 
